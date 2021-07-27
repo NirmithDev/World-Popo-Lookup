@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.Header{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 25px;
+}
+.searchCont{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.searchBox{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+    margin: 14px;
+}
+
+.searchBox:focus{
+    outline: none;
+}
+
+.Submit{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px 0 10px 0;
+}
+.outCont{
+    background-color: rgba(0,0,0,0.4); 
+    width: 300px; 
+    height: 300px; 
+    margin: 20px;
+    border-radius:10px;
+    box-shadow: white 0px 10px 10px 0px;
+    transition: 2s;
+    overflow-x: auto;
+}
+.outCont:hover{
+    background-color: black;
+    width: 350px;
+    height: 305px;
+}
+.output{
+    width: 80%;
+    height: 700px;
+    background-color: rgba(136, 70, 70, 0.404);
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+#contFail{
+    padding-top: 35%;
+    text-align: center;
+    font-size: 24px;
+}
+.image{
+    border-radius: 10px;
+}
+#countryName{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+#countryPopulation,#countryCapital,#countryAlpha{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:768px){
+    .output{
+        width: 90%;
+        height: 600px;
+    }
+    #contFail{
+        padding-top: 50%;
+    }
+}
+
+footer {
+    background-color: rgba(0,0,0,1);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    max-height: 150px;
+}
